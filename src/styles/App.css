@@ -1,0 +1,70 @@
+.app {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.game-image {
+  width: 100px; 
+  height: auto; 
+  margin-right: 20px;
+}
+
+.game-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.chessboard-container {
+  position: relative;
+}
+
+.game-over {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 1;
+}
+
+.game-over p {
+  margin: 5px 0;
+}
+
+.color-scheme-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.color-scheme-buttons button {
+  margin: 0 5px;
+  padding: 10px;
+  border: none;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.color-scheme-buttons button.active {
+  background-color: #007bff;
+}
+
+.color-scheme-buttons button:hover {
+  background-color: #555;
+}
